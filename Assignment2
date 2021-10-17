@@ -1,0 +1,74 @@
+package org.college;
+
+public class College {
+
+	public void collegeName() {
+		// TODO Auto-generated method stub
+		System.out.println("collegeName : AMACE");
+
+	}
+	
+	public void collegeCode() {
+		// TODO Auto-generated method stub
+		System.out.println("collegCode : O2117");
+	}
+	
+	public void collegeRank() {
+		// TODO Auto-generated method stub
+		System.out.println("collegeRank : 117");
+	}
+}
+========================================================
+package org.department;
+
+import org.college.College;
+
+public class Department extends College {
+	
+	public void deptName() {
+		// TODO Auto-generated method stub
+
+		System.out.println("deptName : IT");
+	}
+
+}
+==================================================
+
+package org.student;
+
+import org.department.Department;
+
+public class Student extends Department {
+
+	public void studentName() {
+		// TODO Auto-generated method stub
+		System.out.println("studentName -Gandhi");
+	}
+
+	public void studentDept() {
+		// TODO Auto-generated method stub
+		System.out.println("studentDept- IT");
+	}
+
+	public void studentId() {
+		// TODO Auto-generated method stub
+		System.out.println("studentId -9000267");
+	}
+
+	// studentName(),studentDept(),studentId()
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Student obj = new Student();
+		obj.studentName();
+		obj.studentId();
+		obj.studentDept();
+		obj.deptName();
+		obj.collegeName();
+		obj.collegeCode();
+		obj.collegeRank();
+
+	}
+
+}
