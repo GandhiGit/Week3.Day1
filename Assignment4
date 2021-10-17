@@ -1,0 +1,30 @@
+package students;
+
+public class Students {
+
+	public void getStudentInfo(int id) {
+		// TODO Auto-generated method stub
+		System.out.println("Student ID alone :" + id);
+	}
+
+	public void getStudentInfo(int id, String name) {
+		// TODO Auto-generated method stub
+		System.out.println("Student ID : " + id + "Student Name : " + name);
+
+	}
+
+	public void getStudentInfo(String email, int ph) {
+		// TODO Auto-generated method stub
+		System.out.println("Student email : " + email + " Phone :" + ph);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Students obj = new Students();
+		obj.getStudentInfo(207);
+		obj.getStudentInfo(207, "rav");
+		obj.getStudentInfo("abc@int.com", 910929);
+
+	}
+
+}
