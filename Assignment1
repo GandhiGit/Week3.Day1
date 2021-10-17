@@ -1,0 +1,34 @@
+package org.system;
+
+public class Computer {
+	
+	public void computerModel() {
+		// TODO Auto-generated method stub
+
+		System.out.println("This is computerModel method for computer class");
+	}
+	
+	
+	}
+====================================================================
+
+package org.system;
+
+public class Desktop extends Computer
+{
+	
+	public void desktopSize() {
+		// TODO Auto-generated method stub
+			System.out.println("This is Desktop");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Desktop obj =new Desktop();
+		obj.desktopSize();
+		obj.computerModel();
+		
+	}
+
+}
